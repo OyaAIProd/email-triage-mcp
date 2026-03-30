@@ -1,0 +1,89 @@
+{
+  "name": "TRUSS Email Triage MCP — Agentic Inbox Management",
+  "description": "Agentic email triage for AI agents. Connect to Gmail to classify messages, extract action items, auto-label, search, and manage your inbox — all from your AI agent. Classification runs locally with no external AI APIs required.",
+  "version": "1.0.0",
+  "documentationUrl": "https://github.com/claw-factory/email-triage-mcp#readme",
+  "provider": {
+    "organization": "TRUSS / claw-factory",
+    "url": "https://claw-factory.github.io/truss-site"
+  },
+  "supportedInterfaces": [
+    {
+      "url": "https://claw-factory.github.io/truss-site/a2a/v1",
+      "protocolBinding": "HTTP+JSON",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false,
+    "extendedAgentCard": false
+  },
+  "securitySchemes": {
+    "bearer": {
+      "type": "http",
+      "scheme": "bearer",
+      "description": "TRUSS license key — required for Gmail connectivity"
+    }
+  },
+  "security": [{"bearer": []}],
+  "defaultInputModes": ["text/plain", "application/json"],
+  "defaultOutputModes": ["application/json"],
+  "pricing": {
+    "free": false,
+    "paid": {
+      "amount": 25,
+      "currency": "USD",
+      "interval": "month",
+      "url": "https://claw-factory.github.io/truss-site"
+    }
+  },
+  "skills": [
+    {
+      "id": "email_classify",
+      "name": "Email Classification",
+      "description": "Classify emails by type (newsletter, transactional, personal, work, spam) using local rule-based pattern matching",
+      "tags": ["email", "classification", "triage", "gmail"],
+      "examples": ["Classify all unread emails in my inbox by category"],
+      "inputModes": ["application/json"],
+      "outputModes": ["application/json"]
+    },
+    {
+      "id": "email_extract_tasks",
+      "name": "Task Extraction",
+      "description": "Extract action items, deadlines, and follow-up tasks from email threads",
+      "tags": ["email", "tasks", "productivity", "extraction"],
+      "examples": ["Extract all action items from my unread emails this week"],
+      "inputModes": ["application/json"],
+      "outputModes": ["application/json"]
+    },
+    {
+      "id": "email_auto_label",
+      "name": "Auto-Label",
+      "description": "Automatically apply Gmail labels to emails based on classification rules and patterns",
+      "tags": ["email", "labels", "gmail", "automation"],
+      "examples": ["Auto-label all newsletter emails with the 'Newsletter' label"],
+      "inputModes": ["application/json"],
+      "outputModes": ["application/json"]
+    },
+    {
+      "id": "email_search",
+      "name": "Email Search",
+      "description": "Search Gmail messages using Gmail query syntax with structured result output",
+      "tags": ["email", "search", "gmail"],
+      "examples": ["Search for emails from boss@company.com with attachments in the past month"],
+      "inputModes": ["text/plain"],
+      "outputModes": ["application/json"]
+    },
+    {
+      "id": "email_triage_inbox",
+      "name": "Inbox Triage",
+      "description": "Full inbox triage — classify, prioritize, and summarize unread emails in a single pass",
+      "tags": ["email", "triage", "inbox", "productivity"],
+      "examples": ["Triage my inbox and give me a prioritized summary of what needs attention today"],
+      "inputModes": ["application/json"],
+      "outputModes": ["application/json"]
+    }
+  ]
+}
