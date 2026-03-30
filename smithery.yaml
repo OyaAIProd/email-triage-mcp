@@ -1,0 +1,9 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      TRUSS_LICENSE_KEY:
+        type: string
+        description: "License key for Pro features (optional)"
+    required: []
