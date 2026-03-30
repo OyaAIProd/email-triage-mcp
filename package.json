@@ -1,7 +1,7 @@
 {
   "name": "@truss-dev/email-triage-mcp",
-  "version": "1.0.0",
-  "description": "Agentic email triage for Claude Code \u2014 classify, extract tasks, auto-label, and manage your inbox with AI",
+  "version": "1.0.1",
+  "description": "Agentic email triage for Claude Code — classify, extract tasks, auto-label, and manage your inbox with AI",
   "type": "module",
   "bin": {
     "truss-email-triage": "./dist/index.js"
@@ -14,13 +14,21 @@
   },
   "keywords": [
     "mcp",
+    "mcp-server",
+    "model-context-protocol",
     "email",
     "triage",
     "gmail",
+    "inbox",
     "claude",
+    "claude-code",
+    "cursor",
     "ai",
+    "ai-agent",
+    "agent",
     "productivity",
-    "claude-code"
+    "automation",
+    "tool"
   ],
   "author": "TRUSS",
   "license": "MIT",
