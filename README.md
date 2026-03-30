@@ -282,3 +282,19 @@ npm run eval
 ## License
 
 MIT
+
+
+---
+
+## A2A Discovery
+
+This server publishes a [Google A2A Protocol](https://a2a-protocol.org) Agent Card, making it discoverable by any A2A-compatible agent framework (LangGraph, CrewAI, Google ADK, AutoGen, and others).
+
+**Agent Card:** [`agent-card.json`](./agent-card.json)
+
+The agent card describes this server's skills, capabilities, input/output modalities, and authentication requirements in a machine-readable format. A2A clients can use it to discover and invoke tools automatically without manual configuration.
+
+```bash
+# Fetch the agent card
+curl https://raw.githubusercontent.com/claw-factory/email-triage-mcp/main/agent-card.json
+```
