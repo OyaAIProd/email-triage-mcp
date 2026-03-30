@@ -1,14 +1,14 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.claw-factory/email-triage-mcp",
-  "title": "Email Triage MCP \u2014 Agentic Email Management",
+  "title": "Email Triage MCP — Agentic Email Management",
   "description": "Agentic email triage for Claude Code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@truss-dev/email-triage-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtimeHint": "node",
       "transport": {
         "type": "stdio"
