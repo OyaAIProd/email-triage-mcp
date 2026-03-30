@@ -1,5 +1,7 @@
 # @truss-dev/email-triage-mcp
 
+[![SafeSkill 82/100](https://img.shields.io/badge/SafeSkill-82%2F100_Passes%20with%20Notes-yellow)](https://safeskill.dev/scan/claw-factory-email-triage-mcp)
+
 **Agentic email triage for Claude Code.** Classify, extract tasks, auto-label, and manage your inbox — all from your AI agent.
 
 This MCP server connects to Gmail and gives Claude Code (or any MCP-compatible agent) the ability to read, classify, search, and act on your email. No external AI APIs needed — classification runs locally using rule-based pattern matching. Your agent provides the intelligence; this server provides the data.
